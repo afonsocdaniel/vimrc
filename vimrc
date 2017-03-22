@@ -14,21 +14,10 @@ set wildignore+=*/node_modules/*,*.so,*.swp,*.zip,*/deps/*,*/_build/*
 let g:ctrlp_custom_ignore = 'node_modules/.*,deps/.*,_build/.*'
 
 syntax on
-filetype plugin indent on
-set number
+
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
 set autoindent
 set smartindent
-set ruler
-set ts=2
-set sts=2
-set sw=2
-
-set backup
-set backupdir=~/.vim/backup
-set directory=~/.vim/tmp
-
-" clear last search
-nmap <C-n> :let @/ = ""<enter>
-
-" reload vimrc
-nmap <C-s> :so ~/.vimrc<enter>
